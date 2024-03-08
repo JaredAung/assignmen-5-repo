@@ -10,15 +10,7 @@
 
 <h2 class = "css-question"> How to Apply CSS to HTML</h2>
 <p class = "css-question">
-    <style>
-        h3 {
-            color: red;
-            background-color: black;
-        }
-         p1 {
-            color: green;
-         }
-    </style>
+    <link rel=" stylesheet" href = "resources/stylesheet.css" />
 
     <h3> <code> style </code> tag is used here to incorporate CSS into the HTML.</h3>
     <p1> The text is written in the HTML but the styling of the text is done in CSS using the <code> style</code></p1>
@@ -26,5 +18,17 @@
 
 <h2 class = "js-question"> How to Use JavaScript in a WebPage.</h2> 
 <p class = "js-question"> 
-    
+    (1) Incorporating external JavaScript file into the HTML file.
+    <script src = "resources/main.js"></script>
+
+    By assigning src the location of the js file within the <code> script </code> tag, external JavaScript can be incorporated inside an HTML file. 
+
+    (2) Incorporating JavaScript inside the HTML file internally.
+    <script>
+        window.addEventListener("load", function()
+         {
+            alert("Welcome to the page.");
+        });
+    </script>
+    By directly writing the code inside the <code> script </code> tags, JavaScript can also be used. 
 </p>
