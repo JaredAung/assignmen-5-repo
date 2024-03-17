@@ -1,13 +1,9 @@
-let num1 = prompt("Enter the first number: ");
-let num2 = promot("Enter the second number: ");
+function AddNumbers(){
+    var number1 = parseFloat(document.getElementByID(num1).value);
+    var number2 = parseFloat(document.getElementById(num2).value);
+    var result = number1  + number2;
+    document.getElementById(result).value = 'The sum is '+ result;
 
-num1 = parseInt(num1);
-num2 = parseInt(num2);
-
-if(isNaN(num1) || isNaN(num2)){
-    alert ("Invalid numbers. Try again.");
 }
-else{
-    let add = num1 + num2;
-    alert("The sum of the $(num1) and $(num2) is $(result)");
-}
+var addButton = document.getElementById('Addition');
+addButton.addEventListener("click", AddNumbers);

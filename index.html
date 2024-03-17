@@ -17,17 +17,22 @@
 </p>    
 
 <h2 class = "js-question"> How to Use JavaScript in a WebPage.</h2> 
+
 <p class = "js-question"> 
     (1) Incorporating external JavaScript file into the HTML file.
     <script src = "resources/main.js"></script>
 
+    <input type = "number" id = "num1" placeholder="Enter the first number: ">
+    <input type = "number" id = "num2" placeholder="Enter the second number: ">
+    <button id = "Addition"> Summation of Numbers </button>
+
     By assigning src the location of the js file within the <code> script </code> tag, external JavaScript can be incorporated inside an HTML file. 
 
-    (2) Incorporating JavaScript inside the HTML file internally.
+    (2) Incorporating JavaScript inside the HTML file internally. The "Welcome to the page alert" was done by using this method. 
     <script>
         window.addEventListener("load", function()
          {
-            alert("Welcome to the page.");
+            alert("Welcome to the page. The page has been successfully loaded.");
         });
     </script>
     By directly writing the code inside the <code> script </code> tags, JavaScript can also be used. 
